@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <title>CutOut</title>
     <style>
-      * {
-        color: #FFF;
-      }
-
       body {
         background-color: #264B6C;
       }
@@ -20,6 +16,7 @@
       .header-bar,
       .footer-bar {
         background-color: #1f4f78e3;
+        color: #FFF;
       }
 
       .navbar-brand,
@@ -43,19 +40,43 @@
 
 
       /* MAIN STYLES */
-      main {
-        border: 1px solid;
-        min-height: 80vh;
+      #first-section {
+        background-color: #2E75B5;
+      }
+
+      #second-section {
+        background-color: #FFF;
+      }
+
+      #second-section h4 {
+        color: #2E75B5;
+        margin: 0;
+        font-weight: bolder;
+      }
+
+      #second-section p {
+        color: #898989;
+        margin: 0;
+        font-weight: bolder;
+      }
+
+      #second-section-images {
+        object-fit: cover;
+        border-radius: 10px;
+        width: 330px;
+        height: auto;
       }
     </style>
   </head>
 
   <body>
+
+    <!-- HEADER SECTION -->
     <header class="sticky-top header-bar">
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid m-2 px-5">
-          <a class="navbar-brand fw-bold" href="#">CUTOUT</a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+          <a class="navbar-brand fw-bold" href="#">CutOut</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -71,29 +92,93 @@
       </nav>
     </header>
 
-    <main>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-      dignissimos libero culpa sed magnam alias molestiae neque quis. Ducimus
-      tempora eaque ipsum assumenda laudantium, placeat at explicabo facilis est
-      quis.
-      <div class="container-fluid">
-        <div class="row my-custom-classname justify-content-between align-items-center">
-          <div class="col-4">
-            <div class="p-4 border bg-light">box 1</div>
+
+
+    <!-- FIRST SECTION (Heading, Images, and CTA Button) -->
+    <section id="first-section">
+      <div class="container-fluid mt-0.5 p-5">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-auto text-lg-start ">
+            <h1><span style="color: #FED966;">CUT</span><span style="color: white;">OUT</span></h1>
+            <p style="color: white;">Haven't experience a face hole cutout? Try to create digital versions of it using
+              this application</p>
+            <button class="btn" style="background-color: #FED966;">LET'S CUTOUT</button>
           </div>
-          <div class="col-4">
-            <div class="p-4 border bg-light">box 2</div>
-          </div>
-          <div class="col-4">
-            <div class="p-4 border bg-light">box 2</div>
+
+          <div class="col-auto">
+            <img src="image1.jpg" class="img-fluid mx-2" alt="Outfit Image 1"
+              style="max-width: 150px; border-radius: 10px;">
+            <img src="image2.jpg" class="img-fluid mx-2" alt="Outfit Image 2"
+              style="max-width: 150px; border-radius: 10px;">
+            <img src="image3.jpg" class="img-fluid mx-2" alt="Outfit Image 3"
+              style="max-width: 150px; border-radius: 10px;">
           </div>
         </div>
       </div>
+    </section>
 
-    </main>
+    
+    <!-- SECOND SECTION (Swap Faces, Preview, Match Style) -->
+    <section id="second-section">
+      <div class="container p-5 border d-flex flex-column gap-3">
+        <!-- Row 1: Swap Faces -->
+        <div class="row justify-content-center align-items-center mb-2">
+          <div class="col-lg-2 col-md-6 col-sm-12 text-lg-start text-md-center text-center mb-3 order-md-1 order-sm-1">
+            <h4>Swap faces</h4>
+            <p>with your</p>
+            <h4>favorite model</h4>
+          </div>
+          <div class="col-lg-auto col-md-12 col-sm-12 text-center order-md-2 order-sm-2">
+            <img src="assets/second-section-pic1.png" id="second-section-images" class="img-fluid"
+              alt="Virtually Try-On Image">
+          </div>
+        </div>
+        <!-- Row 2: Virtually Try-On -->
+        <div class="row justify-content-center align-items-center mb-2">
+          <div class="col-lg-auto col-md-12 text-center order-lg-1 order-2">
+            <img src="assets/second-section-pic2.png" id="second-section-images" class="img-fluid" alt="Virtually Try-On Image">
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 text-lg-end text-md-center text-center mb-3 order-lg-2 order-1">
+            <h4>Virtually try-on</h4>
+            <p>styles</p>
+          </div>
+        </div>
+        <!-- Row 3: Preview Your New Look -->
+        <div class="row justify-content-center align-items-center mb-2">
+          <div class="col-lg-2 col-md-6 col-sm-12 text-lg-start text-center mb-3 order-1">
+            <h4>Preview</h4>
+            <p>your</p>
+            <h4>new look</h4>
+          </div>
+          <div class="col-lg-auto col-md-12 text-center order-2">
+            <img src="assets/second-section-pic3.png" id="second-section-images" class="img-fluid" alt="Virtually Try-On Image">
+          </div>
+        </div>
+        <!-- Row 4: Match Your Style -->
+        <div class="row justify-content-center align-items-center mb-2">
+          <div class="col-lg-auto col-md-12 text-center order-lg-1 order-2">
+            <img src="assets/second-section-pic4.png" id="second-section-images" class="img-fluid" alt="Virtually Try-On Image">
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 text-lg-end text-center mb-3 order-lg-2 order-1">
+            <p>Match</p>
+            <h4>your style</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    <!-- THIRD SECTION (Heading, Images, and CTA Button) -->
+    <section id="third-section">
+
+    </section>
+
+
+
+
+    <!-- FOOTER SECTION -->
     <footer class="footer-bar">
-      <div class="container-fluid d-flex flex-column gap-4 p-3 px-5">
+      <div class="container-fluid d-flex flex-column gap-4 p-3 py-4 px-5">
         <div class="row justify-content-between">
           <div class="col-lg-auto col-md-12 text-center text-lg-start">
             <p>Fulfilling the requirements for our Internship at Boom
