@@ -8,63 +8,38 @@
     <link rel="stylesheet" href="styles.css">
     <title>CutOut</title>
     <style>
-      body {
-        background-color: #264B6C;
-      }
-
-      /* HEADER & FOOTER STYLES */
-      .header-bar,
-      .footer-bar {
-        background-color: #1f4f78e3;
-        color: #FFF;
-      }
-
-      .navbar-brand,
-      .nav-link {
-        color: #FFF !important;
-      }
-
-      .navbar-toggler:focus,
-      .navbar-toggler:active {
-        box-shadow: none;
-        border: none;
-      }
-
-      .navbar-toggler {
-        border: none;
-      }
-
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
-
-
       /* MAIN STYLES */
+      /* First Section */
       #first-section {
         background-color: #2E75B5;
-      }
-
-      .second-section {
-        background-color: #FFF;
-      }
-
-      #second-section h4 {
-        color: #2E75B5;
-        margin: 0;
-        font-weight: bolder;
-      }
-
-      #second-section p {
-        color: #898989;
-        margin: 0;
-        font-weight: bolder;
-      }
-
-      #second-section-images {
-        object-fit: cover;
-        border-radius: 10px;
-        width: 330px;
         height: auto;
+      }
+
+      #first-section-button {
+        background-color: #FED966;
+        font-weight: bolder;
+        color: #2E75B5;
+      }
+
+      .image-1,
+      .image-2,
+      .image-3 {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .image-caption {
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .caption h3,
+      .caption p {
+        margin: 0;
       }
     </style>
   </head>
@@ -74,14 +49,14 @@
     <!-- HEADER SECTION -->
     <header class="sticky-top header-bar">
       <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid m-2 px-5">
+        <div class="container-fluid m-2 px-lg-5 px-md-5 px-sm-1 ">
           <a class="navbar-brand fw-bold" href="#">CutOut</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -96,22 +71,31 @@
 
     <!-- FIRST SECTION (Heading, Images, and CTA Button) -->
     <section id="first-section">
-      <div class="container-fluid mt-0.5 p-5">
+      <div class="container mt-0.5 p-5">
         <div class="row justify-content-center align-items-center text-center">
-          <div class="col-auto text-lg-start ">
-            <h1><span style="color: #FED966;">CUT</span><span style="color: white;">OUT</span></h1>
-            <p style="color: white;">Haven't experience a face hole cutout? Try to create digital versions of it using
+          <!-- Title Heading -->
+          <div class="col-lg-3 text-lg-start text-center">
+            <h1 style="font-size: 3rem;"><span style="color: #FED966;">CUT</span><span
+                style="font-weight: 200; color: #FED966;">OUT</span></h1>
+            <p style="color: white; font-weight: 200;">Haven't experience a face hole cutout? Try to create digital
+              versions of it using
               this application</p>
-            <button class="btn" style="background-color: #FED966;">LET'S CUTOUT</button>
+            <button class="btn btn-primary mt-lg-5 mt-md-1" id="first-section-button">LET'S CUTOUT</button>
           </div>
-
-          <div class="col-auto">
-            <img src="image1.jpg" class="img-fluid mx-2" alt="Outfit Image 1"
-              style="max-width: 150px; border-radius: 10px;">
-            <img src="image2.jpg" class="img-fluid mx-2" alt="Outfit Image 2"
-              style="max-width: 150px; border-radius: 10px;">
-            <img src="image3.jpg" class="img-fluid mx-2" alt="Outfit Image 3"
-              style="max-width: 150px; border-radius: 10px;">
+          <!-- First Image -->
+          <div class="col-auto mt-3">
+            <img src="assets/potential-images/first-section-pic1.png" alt="Face Model 1" class="image-1  img-fluid">
+            <div class="image-caption ms-lg-5">
+              <img src="assets/potential-images/first-section-pic2.png" alt="Face Model 2" class="image-2 img-fluid">
+              <div class="caption mt-4">
+                <h4>Outfit Name</h4>
+                <p>Outfit Descriptions</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Image -->
+          <div class="col-lg-3 col-md-12">
+            <img src="assets/potential-images/first-section-pic3.png" alt="Face Model 3" class="image-3 img-fluid">
           </div>
         </div>
       </div>
