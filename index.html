@@ -9,37 +9,20 @@
     <title>CutOut</title>
     <style>
       /* MAIN STYLES */
-      /* First Section */
-      #first-section {
+      .third-section {
         background-color: #2E75B5;
-        height: auto;
       }
 
-      #first-section-button {
+      #third-section-button {
         background-color: #FED966;
         font-weight: bolder;
         color: #2E75B5;
       }
 
-      .image-1,
-      .image-2,
-      .image-3 {
-        width: 200px;
-        height: auto;
-        border-radius: 10px;
-      }
-
-      .image-caption {
-        text-align: center;
-        background-color: white;
-        color: black;
-        border-radius: 10px;
-        padding: 10px;
-      }
-
-      .caption h3,
-      .caption p {
-        margin: 0;
+      .btn-primary {
+        display: block;
+        margin: 0 auto;
+        border: none;
       }
     </style>
   </head>
@@ -67,8 +50,6 @@
       </nav>
     </header>
 
-
-
     <!-- FIRST SECTION (Heading, Images, and CTA Button) -->
     <section id="first-section">
       <div class="container mt-0.5 p-5">
@@ -80,13 +61,13 @@
             <p style="color: white; font-weight: 200;">Haven't experience a face hole cutout? Try to create digital
               versions of it using
               this application</p>
-            <button class="btn btn-primary mt-lg-5 mt-md-1" id="first-section-button">LET'S CUTOUT</button>
+            <button class="btn btn-primary mt-lg-5 mt-md-1" id="first-section-button" href="#">LET'S CUTOUT</button>
           </div>
           <!-- First Image -->
           <div class="col-auto mt-3">
-            <img src="assets/potential-images/first-section-pic1.png" alt="Face Model 1" class="image-1  img-fluid">
+            <img src="assets/first-section-pic1.png" alt="Face Model 1" class="image-1  img-fluid">
             <div class="image-caption ms-lg-5">
-              <img src="assets/potential-images/first-section-pic2.png" alt="Face Model 2" class="image-2 img-fluid">
+              <img src="assets/first-section-pic2.png" alt="Face Model 2" class="image-2 img-fluid">
               <div class="caption mt-4">
                 <h4>Outfit Name</h4>
                 <p>Outfit Descriptions</p>
@@ -95,7 +76,7 @@
           </div>
           <!-- Second Image -->
           <div class="col-lg-3 col-md-12">
-            <img src="assets/potential-images/first-section-pic3.png" alt="Face Model 3" class="image-3 img-fluid">
+            <img src="assets/first-section-pic3.png" alt="Face Model 3" class="image-3 img-fluid">
           </div>
         </div>
       </div>
@@ -104,7 +85,7 @@
 
     <!-- SECOND SECTION (Swap Faces, Preview, Match Style) -->
     <section id="second-section">
-      <div class="container second-section p-5 border d-flex flex-column gap-3">
+      <div class="container second-section p-5 d-flex flex-column gap-3">
         <!-- Row 1: Swap Faces -->
         <div class="row justify-content-center align-items-center mb-2">
           <div class="col-lg-2 col-md-6 col-sm-12 text-lg-start text-md-center text-center mb-3 order-md-1 order-sm-1">
@@ -157,7 +138,27 @@
 
     <!-- THIRD SECTION (Heading, Images, and CTA Button) -->
     <section id="third-section">
+      <div class="container third-section p-5">
+        <div class="row justify-content-center align-items-center">
+          <!-- Left Image and Caption -->
+          <div class="col-auto text-center">
+            <div class="image-caption ">
+              <img src="assets/third_section_pic1.png" alt="Face Model 2" class="image-2 img-fluid">
+              <div class="caption mt-4">
+                <h4>Outfit Name</h4>
+                <p>Outfit Descriptions</p>
+              </div>
+            </div>
+          </div>
 
+
+          <!-- Right Larger Image with Button -->
+          <div class="col-auto ">
+            <img src="assets/third_section_pic1.png" class="img-fluid rounded" alt="Outfit Image 2">
+            <button class="btn btn-primary mt-3" id="third-section-button" href="#">TRY IT NOW</button>
+          </div>
+        </div>
+      </div>
     </section>
 
 
