@@ -35,22 +35,20 @@ body {
 	height: auto;
 }
 
-#first-section-button {
+#first-section-button,
+#third-section-button {
 	background-color: #FED966;
-	font-weight: bolder;
 	color: #2E75B5;
 }
 
 .image-1,
 .image-2,
 .image-3 {
-	width: 200px;
-	height: auto;
+	/* height: 200px; */
 	border-radius: 10px;
 }
 
 .image-caption {
-	text-align: center;
 	background-color: white;
 	color: black;
 	border-radius: 10px;
