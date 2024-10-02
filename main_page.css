@@ -44,21 +44,10 @@ body {
 .image-1,
 .image-2,
 .image-3 {
-	/* height: 200px; */
 	border-radius: 10px;
 }
 
-.image-caption {
-	background-color: white;
-	color: black;
-	border-radius: 10px;
-	padding: 10px;
-}
 
-.caption h3,
-.caption p {
-	margin: 0;
-}
 
 /* Second Section */
 .second-section {
@@ -87,12 +76,6 @@ body {
 /* Third Section */
 .third-section {
 	background-color: #2E75B5;
-}
-
-#third-section-button {
-	background-color: #FED966;
-	font-weight: bolder;
-	color: #2E75B5;
 }
 
 .btn-primary {
