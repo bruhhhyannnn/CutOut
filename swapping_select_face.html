@@ -8,26 +8,16 @@
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="swapping_selec_face.css">
 		<title>CutOut</title>
-		<style>
-			#first-section {
-				background-color: #FFF;
-				color: #1f4f78e3;
-			}
-
-			#second-section {
-				color: #FFF;
-			}
-		</style>
 	</head>
 
 	<body>
 
 		<!-- HEADER SECTION -->
 		<header class="sticky-top header-bar">
-			<nav class="navbar navbar-expand-lg ">
+			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid m-2 px-lg-5 px-md-5 px-sm-1 ">
-					<a class="navbar-brand fw-bold" href="#">CutOut</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					<a class="navbar-brand fw-bold text-light" href="#">CutOut</a>
+					<button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -45,40 +35,39 @@
 
 		<!-- FIRST SECTION -->
 		<section id="first-section">
-			<div class="container-fluid mt-0.5 p-5 text-center">
-				<div class="row">
-					<h3 class="display-4 fw-bold">PICK A FACE</h3>
-				</div>
-				<div class="row">
-					<p class="lead" style="font-weight: 400;">Pick a face to use among the set
-						templates</p>
-				</div>
+			<div class="mt-0.5 p-5 text-center bg-light">
+				<h3 class="display-4 fw-bold">PICK A FACE</h3>
+				<p class="fs-5">Pick a face to use among the set templates</p>
 			</div>
 		</section>
 
 		<!-- SECOND SECTION -->
 		<section id="second-section">
-			<div class="container-fluid mt-5 p-5 text-center">
-				<div class="row">
-					<div class="col-lg-5 col-md-12 m-auto">
-						<h4 class="fs-1">Upload an Image</h4>
-						<div style="background-color: #2D5A7F;" class="rounded-5 p-5 w-50 mx-auto">
-							<img src="assets/icons/upload-icon-swapping-page.png" class="img-fluid d-block mx-auto"
-								alt="Upload Image">
-						</div>
+			<div class="container mt-3 p-5">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-5 text-center ">
+						<p class="display-5 text-light">Upload an Image</p>
+						<a href="#">
+							<div style="background-color: #2D5A7F;" class="rounded-5 p-5">
+								<img src="assets/icons/upload-icon-swapping-page.png" class="img-fluid w-50"
+									alt="Upload Image">
+							</div>
+						</a>
 					</div>
-					<div class="col-lg-2 col-md-12 my-lg-auto my-md-5">
+					<div class="col-auto my-auto text-center">
 						<h3 style="color: #FFF;">OR</h3>
 					</div>
-					<div class="col-lg-5 col-md-12 m-auto">
-						<h4 class="fs-1">Take a Picture</h4>
-						<div style="background-color: #2D5A7F;" class="rounded-5 p-5 w-50 mx-auto">
-							<img src="assets/icons/take-picture-icon-swapping-page.png"
-								class="img-fluid d-block mx-auto" alt="Upload Image">
-						</div>
+					<div class="col-lg-4 col-md-5 text-center">
+						<p class="display-5 text-light">Take a Picture</p>
+						<a href="#">
+							<div style="background-color: #2D5A7F;" class="rounded-5 p-5">
+								<img src="assets/icons/take-picture-icon-swapping-page.png" class="img-fluid w-50"
+									alt="Upload Image">
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="row text-end my-5">
+				<div class="row text-end mt-5">
 					<div class="col">
 						<button class="btn btn-secondary fw-bold me-3" id="back-button" href="#">Go Back</button>
 						<button class="btn btn-primary fw-bold" id="continue-button" href="#">Continue</button>
@@ -86,7 +75,6 @@
 				</div>
 			</div>
 		</section>
-
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
