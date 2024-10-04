@@ -39,7 +39,6 @@ body {
 /* Second Section */
 #second-section {
 	background-color: #FFF;
-	width: auto;
 }
 
 #second-section h3 {
@@ -53,7 +52,7 @@ body {
 	font-weight: bolder;
 }
 
-#second-section-images {
+#second-section-images { /* to be potentiall removed */
 	object-fit: cover;
 	width: 330px;
 	height: auto;
