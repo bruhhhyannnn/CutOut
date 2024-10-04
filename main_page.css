@@ -48,14 +48,7 @@ body {
 
 #second-section p {
 	color: #898989;
-	margin: 0;
 	font-weight: bolder;
-}
-
-#second-section-images { /* to be potentiall removed */
-	object-fit: cover;
-	width: 330px;
-	height: auto;
 }
 
 /* Third Section */
